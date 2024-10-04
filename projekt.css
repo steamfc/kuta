@@ -1,0 +1,232 @@
+body{
+    background-color: #5087fdbb;
+   overflow-x:hidden; 
+}
+
+.navbar  i{
+   color:rgb(255, 255, 255);
+   font-size:40px;
+   transition:0.88s;
+  
+}
+.navbar{
+    background-color: rgba(255, 0, 0, 0);
+    padding:12px 15px;
+}
+.navbar a{
+    color:white;
+    padding:10px 10px;
+}
+.navbar i:hover{
+    color:#000000;
+    transition: 0.38s;
+}
+
+
+
+.move{
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    font-family:"Verdana";
+    font-size:3.85em;
+    animation: move 20s linear infinite;
+    width:100%;
+    white-space: nowrap;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    position:static;
+}
+
+.move::after {
+    content: "";
+    display: inline-block;
+    padding-left: 100%;
+  }
+  
+@keyframes move{
+    0%{transform:translateX(-100%)}
+    100%{transform: translateX(100%);}
+}
+.img{
+    position: absolute;
+    right:0;
+    bottom:55px;
+    z-index:-1;
+  }
+  @media(min-aspect-ratio:16/9){
+    .img{
+      width:100%;
+      height:auto;
+    }
+  }
+  @media(max-aspect-ratio:16/9){
+    .img{
+      width:auto;
+      height:100%
+    }
+  }
+  .intro{
+    text-align: center;
+    justify-content: center;
+  }
+  .intro h1{
+    font-family:"Verdana";
+    font-weight:bold;
+    font-size:5.5em;
+  }
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 2.4em;
+}
+.container1{
+    display:grid;
+    padding:30px 20px;
+    border: 4px solid black;
+    height:200px;
+    width:200px;
+    background-color: #fff;
+    opacity:50%;
+    font-family:Verdana;
+    transition:1.5s;
+    text-align:center;
+    margin:60px;
+    float:left;
+    border-radius: 33px;
+}
+
+.container1:hover{
+    opacity:85%;
+    transition:1.5s;
+}
+.move::selection{
+    background-color: #c01f;
+    cursor:row-resize;
+}
+.intro h1:active{
+    -webkit-text-stroke:2px #c01f;
+    color:transparent;
+    transition:0.77s;
+}
+.intro h1::selection{
+    background-color: #ffff00 ;
+    -webkit-text-stroke:2px #c01f;
+    color:transparent;
+
+}
+.container1 a{
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+}
+#compass:hover{
+    text-decoration:underline;
+}
+.title{
+    padding:15px 15px;
+    text-align:center;
+    background-color: #fff;
+    font-family:"Verdana";
+    font-size :4.58em;
+    border-radius: 44em;
+}
+.landscapes{
+    padding:10px 15px;
+    background-color: #6b6b6b;
+    height:430px;
+    width:327px;
+    border:5px solid #000000;
+    margin:35px;
+    float:left;
+    justify-content: center;
+}
+.landscapes p{
+    color:#fff;
+    font-family: Verdana;
+    text-align:center;
+    transform:translateY(-10px);
+}
+#MyP{
+    color:White;
+   font-family:Verdana,Tahoma, sans-serif;
+}
+@media only screen and (max-width:600px){
+
+}
+@media only screen and (min-width:1200px){
+
+}
+#button1{
+    color:white;
+    background-color: red;
+    padding:15px 20px;
+    border:none;
+    border-radius: 45px;
+    font-size:1.7em;
+    font-family: "Verdana";
+}
+#button1:hover{
+    background-color: rgb(206, 23, 23);
+    transition:0.15s;
+}
+#button1:active{
+    background-color: rgb(167, 21, 21);
+
+}
+.unsubscribe{
+    background-color: white;
+    text-align:center;
+    padding:14px 25px;
+    justify-content: center;
+    position:relative;
+    top:45px;
+    margin:auto;
+    width:176px;
+    height:135px;
+    border-radius:30px;
+    display:none;
+}
+.unsubscribe p{
+    font-family: Verdana;
+}
+.Btns button{
+    color:white;
+    font-family: Verdana;
+    border:none;
+    border-radius: 15px;
+    background-color: #1e34c6;
+    padding:10px 15px;
+    cursor:pointer;
+    position: relative;
+    top:14px;
+   
+}
+form{
+    background-color:#fff;
+    width:700px;
+    height:550px;
+    margin:auto;
+    border-radius: 50px;
+    padding:18px 25px;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    font-size: 1.25em;
+    margin:10px;
+}
+label{
+    font-family: Verdana, sans-serif;
+}
+#sign_in{
+    background-color: #000;
+    color:#fff;
+    font-size: 1.5em;
+    padding:10px 15px;
+    border-radius: 25px;
+}
+.form{
+    align-items: center;
+    justify-content: center;
+}
